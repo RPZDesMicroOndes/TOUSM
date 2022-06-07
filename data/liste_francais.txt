@@ -542,9 +542,9 @@ affronte
 affrontement
 affrontements
 affronter
-affût
-affûtage
-affûter
+affut
+affutage
+affuter
 afghan
 Afghan
 afghane
@@ -1291,7 +1291,7 @@ anxiete
 anxieux
 aorte
 Aoun
-août
+aout
 apaisement
 apaiser
 apanage
@@ -2836,7 +2836,7 @@ bombardiers
 bombe
 bombes
 bon
-bon cœur
+bon coeur
 bon grain
 bonace
 Bonaparte
@@ -3139,12 +3139,12 @@ Bruce
 bruine
 bruit
 bruits
-brûlant
-brûlante
-brûle
-brûlees
-brûler
-brûlure
+brulant
+brulante
+brule
+brulees
+bruler
+brulure
 brume
 brun
 brunch
@@ -3171,10 +3171,10 @@ bu
 buanderie
 Bucarest
 buccal
-bûcher
-bûcheron
-bûcherons
-bûcheur
+bucher
+bucheron
+bucherons
+bucheur
 Budapest
 budget
 budgetaire
@@ -5017,7 +5017,7 @@ consistant
 consiste
 consiste
 consisterait
-consœur
+consoeur
 consolation
 consoler
 consolidation
@@ -5206,7 +5206,7 @@ contre
 contrebalancer
 contrebande
 contrecarrer
-contrecœur
+contrecoeur
 contrecoup
 contredire
 contredit
@@ -5449,7 +5449,7 @@ coup de griffe
 coup de pied
 coup de vent
 coup d'Etat
-coup d'œil
+coup d'oeil
 coup monte
 coupable
 coupables
@@ -5518,20 +5518,20 @@ cousin
 cousine
 cousins
 coussin
-coût
-coûte
-coûte
+cout
+coute
+coute
 couteau
 couteaux
 coutelas
-coûtent
-coûter
-coûtera
-coûterait
-coûteuse
-coûteuses
-coûteux
-coûts
+coutent
+couter
+coutera
+couterait
+couteuse
+couteuses
+couteux
+couts
 coutume
 coutumes
 coutumier
@@ -5712,7 +5712,7 @@ crotter
 crottes
 croupe
 croupissement
-croûte
+croute
 croyaient
 croyait
 croyance
@@ -5732,7 +5732,7 @@ crudite
 cruel
 cruelle
 cruellement
-crûment
+crument
 Cruz
 CSA
 Cuba
@@ -6195,10 +6195,10 @@ degenerer
 degoter
 degouliner
 degourdi
-degoût
-degoûtant
-degoûte par
-degoûter
+degout
+degoutant
+degoute par
+degouter
 degoutter
 degradation
 degrader
@@ -6663,7 +6663,7 @@ dessinees
 dessinent
 dessiner
 dessins
-dessoûler
+dessouler
 dessous
 dessus
 destabilisation
@@ -7388,7 +7388,7 @@ Drouot
 dru
 dst
 du
-dû
+du
 dualisme
 dualite
 Dubcek
@@ -7400,7 +7400,7 @@ due
 duel
 dues
 Dumas
-dûment
+dument
 dunes
 dunkerque
 duo
@@ -8009,7 +8009,7 @@ encouragement
 encourager
 encre
 encrier
-encroûtement
+encroutement
 enculer
 encyclopedie
 end
@@ -8272,9 +8272,9 @@ envoi
 envoie
 envol
 envolee
-envoûtant
-envoûtement
-envoûter
+envoutant
+envoutement
+envouter
 envoye
 envoyee
 envoyees
@@ -8665,7 +8665,7 @@ eurotunnel
 eurythmique
 eus
 eut
-eût
+eut
 eux
 evacuant
 evacuation
@@ -9960,10 +9960,10 @@ fusionner
 fusions
 fustiger
 fut
-fût
+fut
 fute
 futile
-fûts
+futs
 futur
 future
 futures
@@ -10342,9 +10342,9 @@ goulu
 gourmand
 gourmandise
 gousse
-goût
-goûter
-goûts
+gout
+gouter
+gouts
 goutte
 goutter
 gouttes
@@ -12228,7 +12228,7 @@ jeu
 jeudi
 jeun
 jeune
-jeûne
+jeune
 jeunes
 jeunesse
 jeunesses
@@ -14343,17 +14343,17 @@ munis
 munitions
 muqueuse
 mur
-mûr
+mur
 muraille
 Murdoch
-mûres
+mures
 muret
 Muriel
-mûrir
+murir
 murmure
 murmurer
 murs
-mûrs
+murs
 musarder
 muscle
 muscles
@@ -16174,7 +16174,7 @@ pique
 piquer
 piquet
 piquets
-piqûre
+piqure
 Pirandello
 pirates
 pire
@@ -20168,12 +20168,12 @@ souhaits
 souiller
 souillon
 souillure
-soûl
+soul
 soulage
 soulagement
 soulager
-soûlard
-soûlerie
+soulard
+soulerie
 souleve
 souleve
 soulevee
@@ -20663,25 +20663,25 @@ suppurer
 suprematie
 supreme
 sur
-sûr
+sur
 suranne
 surannes
 surcharge
 surchauffe
 surchauffer
 surclasser
-surcoût
+surcout
 surcroit
 surdite
-sûre
-sûrement
+sure
+surement
 surenchere
 surencheres
 surencherir
 surendettement
-sûres
+sures
 surestimer
-sûrete
+surete
 surevaluer
 surface
 surfaces
@@ -20713,7 +20713,7 @@ surprise
 surprise-partie
 surprises
 surrealiste
-sûrs
+surs
 sursaut
 sursauter
 sursis
@@ -22510,7 +22510,7 @@ voulu
 voulue
 voulut
 vous
-voûte
+voute
 voyage
 voyager
 voyages
