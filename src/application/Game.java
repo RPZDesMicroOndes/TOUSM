@@ -1,185 +1,333 @@
 package application;
 
-public class Game {
+import java.util.ArrayList;
+import java.util.HashMap;
 
-    private static final String COLOR_RESET = "\u001B[40m";
-    private static final String COLOR_MISPLACED = "\u001B[43m";
-    private static final String COLOR_WELLPLACED = "\u001B[42m";
+public class Game{
 
-    private int attemptNumber;
-    private static final int NB_ATTEMPT = 6;
-    private char[] wordHint;
-    private char[] wordToFind;
-    private String[][] attempts;
     private Dictionary dictionary;
-    private Word word;
+    private ArrayList<String> wordGuess;
+    private String[] hint;
+    private HashMap<Integer,ArrayList<String>> wordGuesses;
+    private Word wordToGuess;
+    private int nbTry;
+    private static final int MAX_TRY = 6;
+    private int wordSize;
+    private char firstLetter;
 
-    public Game(Dictionary dictionary) throws IllegalArgumentException{
-        
-        if(dictionary != null){
+    public static final String TEXT_RESET = "\u001B[0m";
+    public static final String TEXT_GREEN = "\u001B[32m";
+    public static final String TEXT_YELLOW = "\u001B[33m";
 
-            this.dictionary = dictionary;
-            this.word = this.dictionary.pickRandomWord();
 
-            this.wordHint = new char[this.word.getword().length()];
-            this.wordHint[0] = this.word.getword().charAt(0);
+    public Game(Dictionary dictionary){
 
-            this.wordToFind = this.word.getword().toCharArray();
-            System.out.println(this.word.getword() + " " + this.wordToFind.length);
-            this.attempts = new String[this.NB_ATTEMPT][this.wordToFind.length];
-            System.out.println(this.attempts.length + " " + this.attempts[0].length);
-            initBoard();
+        this.dictionary = dictionary;
+        this.wordGuess = new ArrayList<>();
+        this.wordGuesses = new HashMap<>();
 
-            play();
-            
-        }else{
+        this.wordToGuess = dictionary.pickRandomWord();
+        this.wordSize = wordToGuess.getWord().length();
+        this.firstLetter = wordToGuess.getWord().charAt(0);
 
-            throw new IllegalArgumentException("application - Game - Game - The dictionary can't be null");
+        this.hint = new String[this.wordSize];
+        this.hint[0] = this.firstLetter + "";
 
-        }
-    
+        this.nbTry = 1;
 
     }
 
-    public void initBoard(){
+    public void play() {
+        
+        boolean wordFound = false;
+        displayBoard();
 
-        for(int i = 0; i < this.attempts.length;i++){
+        while(nbTry <= MAX_TRY && !wordFound){
+            
+            String guess = playTurn();
+            this.wordGuess = checkGuess(guess);
+            this.wordGuesses.put(nbTry,this.wordGuess);
+            //System.out.println(guess);
+            //displayGuess();
+            //System.out.println(this.wordToGuess.getWord());
+            displayBoard();
+            wordFound = checkWordFound(guess);
+            nbTry++;
 
-            for(int j = 0; j < attempts[0].length;j++){
+        }if(!wordFound){
 
-                if(i == 0){
+            System.out.println(TEXT_YELLOW + "\nYou lost, the word was " + this.wordToGuess.getWord() + "...\n" + TEXT_RESET);
 
-                    if(j == 0){
+        }else{
 
-                        this.attempts[i][j] = "\u001B[42m" + this.wordHint[j] + COLOR_RESET;
+            System.out.println(TEXT_GREEN + "\nYou won in " + (nbTry-1) + " attempts !\n" + TEXT_RESET);
+
+        }
+
+    }
+
+    private boolean checkWordFound(String guess) {
+            
+            boolean wordFound = true;
+    
+            for(int i = 0; i < wordSize; i++){
+    
+                if(!guess.equals(wordToGuess.getWord())){
+    
+                    wordFound = false;
+    
+                }
+    
+            }
+    
+            return wordFound;
+    
+    }
+
+    private String playTurn() {
+        
+        this.wordGuess = new ArrayList<>();
+        String word = "";
+
+        //displayHint();
+
+        word = SimpleInput.getString("\nAttempt n°" + this.nbTry + " - What is your attempt ?\n> ");
+
+        while (!checkConditions(word)){
+
+            word = SimpleInput.getString("\nAttempt n°" + this.nbTry + " Wrong attempt, What is your attempt ?\n> ");
+
+        }
+
+        for (int i = 0; i < word.length(); i++) {
+            
+            this.wordGuess.add(word.charAt(i) + "");
+
+        }
+
+        return word;
+
+    }
+
+    private boolean checkConditions(String word) {
+
+        boolean conditions = true;
+
+        if(word != null){
+
+            if(word.length() == wordSize){
+                
+                if(word.charAt(0) == firstLetter){
+                    
+                    if(this.dictionary.inDictionary(word)){
 
                     }else{
 
-                        this.attempts[i][j] = ".";
-
+                        System.out.println("The word is not in the dictionary");
+                        conditions = false;
                     }
-                    
+
                 }else{
 
-                    this.attempts[i][j] = ".";
+                    System.out.println("The first letter of the word must be " + firstLetter);
+                    conditions = false;
 
                 }
-            
+
+            }else{
+                    
+                System.out.println("The word must be " + wordSize + " letters long");
+                conditions = false;
+    
             }
 
-            System.out.println("");
+        }else{
+
+            System.out.println("The word must be a string");
+            conditions = false;
 
         }
 
+        return conditions;
+
     }
 
-    public void play(){
+    private ArrayList<String> checkGuess(String guess) {
 
-        this.attemptNumber = 1;
-        boolean wordFound = false;
-        String attempt = "";
-        boolean inDico = false;
+        ArrayList<String> result = new ArrayList<>();
 
-        displayAttempts();
+        if(guess != null){
 
-        while(attemptNumber <= this.NB_ATTEMPT && !wordFound){
-            do {
+            char[] guessArray = guess.toCharArray();
+            ArrayList<String> differentLetters = differentLetters(guessArray);
+            int[] nbOccurences = nbOccurencesLetters(differentLetters, guess);
 
-                inDico = false;
-                attempt = SimpleInput.getString("Your guess ?\n");
-                Word attemptWord = new Word(attempt);
-                if(this.dictionary.getDictionary().contains(attemptWord)){
-                    inDico = true;
+            int charIndex = 0;
+
+            for (char character : guessArray) {
+
+                int indexOccurencesArray = getIndexOccurencesArray(differentLetters, character);
+
+                if(wordToGuess.getWord().contains(character + "")){
+
+                    if(nbOccurences[indexOccurencesArray] > 0 && this.wordToGuess.getWord().charAt(charIndex) == character){
+
+                        nbOccurences[indexOccurencesArray]--;
+                        result.add(TEXT_GREEN + character + TEXT_RESET);
+                        this.hint[charIndex] = character + "";
+                    
+                    }else if(nbOccurences[indexOccurencesArray] > 0){
+                        
+                        nbOccurences[indexOccurencesArray]--;
+                        result.add(TEXT_YELLOW + character + TEXT_RESET);
+
+                    }else{
+
+                        result.add(character + "");
+
+                    }
+
+                }else{
+
+                    result.add(character + "");
+
                 }
                 
-            } while (attempt.length() == this.wordToFind.length && !attempt.contains(" ") && !attempt.contains("-") && !attempt.contains(".") && attempt.charAt(0) != this.wordToFind[0] && !inDico);
-            checkWord(attempt.toCharArray());
-            String wordToFind = String.valueOf(this.wordToFind);
-            System.out.println(wordToFind);
-            refreshAttempts(checkWord(attempt.toCharArray()));
-            if(wordToFind.equals(attempt)){
+                charIndex++;
+            }
 
-                wordFound = true;
+        }
 
+        return result;
+
+    }
+
+    private int getIndexOccurencesArray(ArrayList<String> differentLetters, char character) {
+
+        int indexOccurencesArray = 0;
+
+        for (int i = 0; i < differentLetters.size(); i++) {
+
+            if(differentLetters.get(i).equals(character + "")){
+
+                indexOccurencesArray = i;
+
+            }
+
+        }
+
+        return indexOccurencesArray;
+    }
+
+    private ArrayList<String> differentLetters(char[] guessArray) {
+
+        ArrayList<String> differentLetters = new ArrayList<>();
+
+        for (char character : guessArray) {
+
+            if(!differentLetters.contains(character + "")){
+
+                differentLetters.add(character + "");
+
+            }
+
+        }
+
+        return differentLetters;
+
+    }
+
+    private int[] nbOccurencesLetters(ArrayList<String> differentLetters, String guess){
+
+        int[] nbOccurences = new int[differentLetters.size()];
+
+        for (int i = 0; i < differentLetters.size(); i++) {
+
+            nbOccurences[i] = 0;
+
+        }
+
+        for (int i = 0; i < guess.length(); i++) {
+
+            for (int j = 0; j < differentLetters.size(); j++) {
+
+                if(guess.charAt(i) == differentLetters.get(j).charAt(0)){
+
+                    nbOccurences[j]++;
+
+                }
+
+            }
+
+        }
+
+        return nbOccurences;
+
+    }
+
+    public void displayBoard(){
+
+        //System.out.println(this.nbTry + " " + this.wordGuesses.size());
+
+        for (int i = 0; i < this.wordGuesses.size(); i++) {
+
+            System.out.print(" ");
+
+            ArrayList<String> guess = this.wordGuesses.get(i+1);
+
+            for (String character : guess) {
+
+                System.out.print(character + " ");
+                
+            }
+
+            System.out.print("\n");
+
+        }
+
+        for(int i = this.wordGuesses.size(); i < MAX_TRY; i++){
+
+            displayHint();
+
+        }
+
+    }
+
+    public void displayHint(){
+
+        for (String character : this.hint) {
+
+            if(character != null){
+
+                System.out.print(" " + character + "");
+            
             }else{
-
-                attemptNumber++;
-
+                    
+                    System.out.print(" .");
+    
             }
             
-
         }
+
+        System.out.println();
 
     }
 
-    public String[] checkWord(char[] attempt){
+    public void displayGuess(){
 
-        String[] attemptColored = new String[attempt.length];
+        //System.out.println("On passe ici les copains !");
+        //System.out.println(this.wordGuess.size());
 
-        for(int i = 0; i < attempt.length; i++){
+        for(String character : this.wordGuess){
 
-            if(this.wordToFind[i] == attempt[i]){
+            //System.out.println("Ici aussi !");
 
-                attemptColored[i] =  COLOR_WELLPLACED + attempt[i] + COLOR_RESET;                
-
-            }else{
-
-                attemptColored[i] =  COLOR_RESET + attempt[i] + COLOR_RESET;
-
-            }
+            System.out.print(character + " ");
 
         }
 
-        return attemptColored; 
-
-    }
-
-    public void refreshAttempts(String[] attempt){
-
-        for(int j = 0; j < attempts[0].length;j++){
-
-            this.attempts[this.attemptNumber-1][j] = attempt[j];
+        System.out.println();
         
-        }
-
-        displayAttempts();
-
-    }
-
-    public int numberOccurence(char c){
-
-        int nbOccurence = 0;
-
-        for(int i = 0;i < this.wordToFind.length;i++){
-
-            if(this.wordToFind[i] == c){
-
-                nbOccurence++;
-
-            }
-
-        }
-
-        return nbOccurence;
-
-    }
-
-    public void displayAttempts(){
-
-        for(int i = 0; i < attempts.length;i++){
-
-            for(int j = 0; j < attempts[0].length;j++){
-
-                System.out.print(attempts[i][j] + " ");
-            
-            }
-
-            System.out.println("");
-
-        }
-
-
-
     }
 
 }

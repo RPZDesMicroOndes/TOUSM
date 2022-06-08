@@ -1,6 +1,5 @@
 package application;
 
-import java.text.Normalizer;
 import java.util.ArrayList;
 
 public class Dictionary {
@@ -23,7 +22,7 @@ public class Dictionary {
 
     public void addWord(Word word) throws IllegalArgumentException{
 
-        String wordText = word.getword();
+        String wordText = word.getWord();
         if(wordText != null && wordText.length() >= 6 && wordText.length() <= 9){
 
             this.dictionary.add(word);
@@ -36,9 +35,19 @@ public class Dictionary {
 
     }
 
+    public void testDictionary(){
+
+        for(Word word : this.dictionary){
+
+            System.out.println(word.getWord());
+
+        }
+
+    }
+
     public void initDictionary() throws IllegalArgumentException{
 
-        ArrayList<String> wordList = RWFile.readFile("../data/liste_francais.txt");
+        ArrayList<String> wordList = RWFile.readFile("data/liste_francais_v2.txt");
         for (String word : wordList) {
 
             if(word.length() >= 6 && word.length() <= 9 && !word.contains("-") && !word.contains(" ") && !word.contains(".")){
@@ -54,10 +63,35 @@ public class Dictionary {
 
     }
 
-    public Word pickRandomWord(){
+    public Word pickRandomWord() {
 
-        int randomIndex = (int) ((Math.random())*(this.dictionary.size()-1));
-        return this.dictionary.get(randomIndex);
+        int randomIndex = (int) (Math.random() * dictionary.size());
+        return dictionary.get(randomIndex);
+
+    }
+
+    public void testPickRandomWord() {
+
+        Word word = pickRandomWord();
+        System.out.println(word.getWord());
+
+    }
+
+    public boolean inDictionary(String word) {
+
+        boolean inDictionary = false;
+
+        for(Word w : dictionary){
+
+            if(w.getWord().equals(word)){
+
+                inDictionary = true;
+
+            }
+
+        }
+
+        return inDictionary;
 
     }
 

@@ -542,9 +542,9 @@ affronte
 affrontement
 affrontements
 affronter
-affut
-affutage
-affuter
+affï¿½t
+affï¿½tage
+affï¿½ter
 afghan
 Afghan
 afghane
@@ -1291,7 +1291,7 @@ anxiete
 anxieux
 aorte
 Aoun
-aout
+aoï¿½t
 apaisement
 apaiser
 apanage
@@ -1300,7 +1300,7 @@ apathie
 apathique
 apatride
 apercevoir
-aperçu
+aperï¿½u
 aperitif
 apesanteur
 aphasie
@@ -2269,7 +2269,7 @@ balance
 balancer
 Balanchine
 balancier
-balançoire
+balanï¿½oire
 balatum
 balaye
 balayer
@@ -2600,7 +2600,7 @@ berner
 Berry
 Bertin
 Bertrand
-Besançon
+Besanï¿½on
 besogne
 besogner
 besoin
@@ -2739,7 +2739,7 @@ blame
 blamer
 blanc
 blanc de chaux
-blanc d'œuf
+blanc d'ï¿½uf
 Blanchard
 blanche
 blanches
@@ -2809,7 +2809,7 @@ bocage
 bocal
 bock
 Boeing
-bœuf
+bï¿½uf
 Bogart
 Bogota
 boire
@@ -2836,7 +2836,7 @@ bombardiers
 bombe
 bombes
 bon
-bon coeur
+bon cï¿½ur
 bon grain
 bonace
 Bonaparte
@@ -3139,12 +3139,12 @@ Bruce
 bruine
 bruit
 bruits
-brulant
-brulante
-brule
-brulees
-bruler
-brulure
+brï¿½lant
+brï¿½lante
+brï¿½le
+brï¿½lees
+brï¿½ler
+brï¿½lure
 brume
 brun
 brunch
@@ -3171,10 +3171,10 @@ bu
 buanderie
 Bucarest
 buccal
-bucher
-bucheron
-bucherons
-bucheur
+bï¿½cher 
+bï¿½cheron 
+bï¿½cherons 
+bï¿½cheur
 Budapest
 budget
 budgetaire
@@ -3316,7 +3316,7 @@ calculer
 calculette
 calculs
 cale en
-caleçon
+caleï¿½on
 Caledonie
 caledonienne
 calendrier
@@ -4372,7 +4372,7 @@ colereux
 colerique
 Colette
 colibri
-colimaçon
+colimaï¿½on
 colin
 colis
 collaborateur
@@ -4491,7 +4491,7 @@ commencent
 commencer
 commencera
 commenceront
-commençons
+commenï¿½ons
 comment
 commentaire
 commentaires
@@ -4503,8 +4503,8 @@ commente
 commenter
 commerage
 commerages
-commerçant
-commerçants
+commerï¿½ant
+commerï¿½ants
 commerce
 commerces
 commercial
@@ -4749,7 +4749,7 @@ conclusif
 conclusion
 conclusions
 conclut
-conçoit
+conï¿½oit
 concombre
 concordance
 concordantes
@@ -4763,10 +4763,10 @@ concretes
 concretion
 concretiser
 concrets
-conçu
+conï¿½u
 concubinage
-conçue
-conçues
+conï¿½ue
+conï¿½ues
 concupiscence
 concupiscent
 concurrence
@@ -4776,7 +4776,7 @@ concurrente
 concurrentes
 concurrentiel
 concurrents
-conçus
+conï¿½us
 condamnable
 condamnant
 condamnation
@@ -5017,7 +5017,7 @@ consistant
 consiste
 consiste
 consisterait
-consoeur
+consï¿½ur
 consolation
 consoler
 consolidation
@@ -5206,12 +5206,12 @@ contre
 contrebalancer
 contrebande
 contrecarrer
-contrecoeur
+contrecï¿½ur
 contrecoup
 contredire
 contredit
 contree
-contrefaçon
+contrefaï¿½on
 contrefait
 contrepartie
 contrepoids
@@ -5449,7 +5449,7 @@ coup de griffe
 coup de pied
 coup de vent
 coup d'Etat
-coup d'oeil
+coup d'ï¿½il
 coup monte
 coupable
 coupables
@@ -5518,20 +5518,20 @@ cousin
 cousine
 cousins
 coussin
-cout
-coute
-coute
+coï¿½t
+coï¿½te
+coï¿½te
 couteau
 couteaux
 coutelas
-coutent
-couter
-coutera
-couterait
-couteuse
-couteuses
-couteux
-couts
+coï¿½tent
+coï¿½ter
+coï¿½tera
+coï¿½terait
+coï¿½teuse
+coï¿½teuses
+coï¿½teux
+coï¿½ts
 coutume
 coutumes
 coutumier
@@ -5712,7 +5712,7 @@ crotter
 crottes
 croupe
 croupissement
-croute
+croï¿½te
 croyaient
 croyait
 croyance
@@ -5732,7 +5732,7 @@ crudite
 cruel
 cruelle
 cruellement
-crument
+crï¿½ment
 Cruz
 CSA
 Cuba
@@ -5949,7 +5949,7 @@ debute
 debute
 debuter
 debuts
-deça
+deï¿½a
 decachete
 decacheter
 decade
@@ -6090,9 +6090,9 @@ decrire
 decrit
 decrocher
 decroitre
-deçu
-deçue
-deçus
+deï¿½u
+deï¿½ue
+deï¿½us
 dedaigner
 dedaigneusement
 dedaigneux
@@ -6195,10 +6195,10 @@ degenerer
 degoter
 degouliner
 degourdi
-degout
-degoutant
-degoute par
-degouter
+degoï¿½t
+degoï¿½tant
+degoï¿½te par
+degoï¿½ter
 degoutter
 degradation
 degrader
@@ -6372,8 +6372,8 @@ denombrer
 denomination
 denomme
 denommer
-denonçaient
-denonçait
+denonï¿½aient
+denonï¿½ait
 denonce
 denonce
 denoncee
@@ -6634,7 +6634,7 @@ desireux
 desirs
 desobeissance
 desobstruer
-desœuvre
+desï¿½uvre
 desolation
 desole
 desoler
@@ -6663,7 +6663,7 @@ dessinees
 dessinent
 dessiner
 dessins
-dessouler
+dessoï¿½ler
 dessous
 dessus
 destabilisation
@@ -7388,7 +7388,7 @@ Drouot
 dru
 dst
 du
-du
+dï¿½
 dualisme
 dualite
 Dubcek
@@ -7400,7 +7400,7 @@ due
 duel
 dues
 Dumas
-dument
+dï¿½ment
 dunes
 dunkerque
 duo
@@ -8009,7 +8009,7 @@ encouragement
 encourager
 encre
 encrier
-encroutement
+encroï¿½tement
 enculer
 encyclopedie
 end
@@ -8272,9 +8272,9 @@ envoi
 envoie
 envol
 envolee
-envoutant
-envoutement
-envouter
+envoï¿½tant
+envoï¿½tement
+envoï¿½ter
 envoye
 envoyee
 envoyees
@@ -8552,7 +8552,7 @@ etame
 etamer
 etanche
 etancher
-etançonner
+etanï¿½onner
 etang
 etant
 etape
@@ -8665,7 +8665,7 @@ eurotunnel
 eurythmique
 eus
 eut
-eut
+eï¿½t
 eux
 evacuant
 evacuation
@@ -9035,9 +9035,9 @@ facilite
 facilitee
 faciliter
 facilites
-façon
-façonner
-façons
+faï¿½on
+faï¿½onner
+faï¿½ons
 facteur
 facteurs
 faction
@@ -9323,7 +9323,7 @@ fiabilite
 fiable
 fiables
 fiacre
-fiançailles
+fianï¿½ailles
 fiance
 fiancer
 fiasco
@@ -9537,7 +9537,7 @@ fluidite
 flux
 flux de
 Foch
-fœtus
+fï¿½tus
 foi
 foie
 foin
@@ -9772,11 +9772,11 @@ Framatome
 framboise
 framboisier
 franc
-français
-Français
-française
-Française
-françaises
+franï¿½ais
+Franï¿½ais
+franï¿½aise
+Franï¿½aise
+franï¿½aises
 France
 Francfort
 franche
@@ -9793,8 +9793,8 @@ franciscain
 Francisco
 Franck
 franco
-François
-Françoise
+Franï¿½ois
+Franï¿½oise
 francophone
 francophones
 francophonie
@@ -9960,10 +9960,10 @@ fusionner
 fusions
 fustiger
 fut
-fut
+fï¿½t
 fute
 futile
-futs
+fï¿½ts
 futur
 future
 futures
@@ -10043,8 +10043,8 @@ garantissant
 garantit
 garce
 Garcia
-garçon
-garçons
+garï¿½on
+garï¿½ons
 Gard
 gardait
 gardant
@@ -10250,7 +10250,7 @@ glacer
 glacial
 glacier
 glaciere
-glaçon
+glaï¿½on
 glaise
 glaive
 glande
@@ -10342,9 +10342,9 @@ goulu
 gourmand
 gourmandise
 gousse
-gout
-gouter
-gouts
+goï¿½t
+goï¿½ter
+goï¿½ts
 goutte
 goutter
 gouttes
@@ -10871,7 +10871,7 @@ horreurs
 horrible
 horripiler
 hors
-hors d'œuvre
+hors d'ï¿½uvre
 horst
 hospitalier
 hospitaliere
@@ -12079,7 +12079,7 @@ irregularites
 irregulier
 irreligion
 irremediable
-irremplaçable
+irremplaï¿½able
 irreparable
 irrepressible
 irreprochable
@@ -12228,7 +12228,7 @@ jeu
 jeudi
 jeun
 jeune
-jeune
+jeï¿½ne
 jeunes
 jeunesse
 jeunesses
@@ -12621,8 +12621,8 @@ Lech
 lecher
 leche-vitrines
 Leclerc
-leçon
-leçons
+leï¿½on
+leï¿½ons
 lecteur
 lecteurs
 lectrice
@@ -12824,7 +12824,7 @@ lilas
 Lille
 lima
 Lima
-limaçon
+limaï¿½on
 lime
 limer
 liminaire
@@ -13106,10 +13106,10 @@ machines
 machoire
 machonner
 macintosh
-maçon
-maçonnerie
-maçonnique
-maçons
+maï¿½on
+maï¿½onnerie
+maï¿½onnique
+maï¿½ons
 macro
 madame
 Madani
@@ -13234,7 +13234,7 @@ malencontreux
 malentendant
 malentendu
 malentendus
-malfaçon
+malfaï¿½on
 malfaiteur
 malfaiteurs
 malgre
@@ -13319,8 +13319,8 @@ Mann
 manne
 mannequin
 mannequins
-manœuvre
-manœuvres
+manï¿½uvre
+manï¿½uvres
 manouche
 manquaient
 manquait
@@ -14062,9 +14062,9 @@ modifier
 modifies
 modo
 module
-mœlle
+mï¿½lle
 moelleux
-mœurs
+mï¿½urs
 Mogadiscio
 Mohamed
 Mohammed
@@ -14343,17 +14343,17 @@ munis
 munitions
 muqueuse
 mur
-mur
+mï¿½r
 muraille
 Murdoch
-mures
+mï¿½res
 muret
 Muriel
-murir
+mï¿½rir
 murmure
 murmurer
 murs
-murs
+mï¿½rs
 musarder
 muscle
 muscles
@@ -14641,8 +14641,8 @@ nocturne
 nocturnes
 Noel
 Noelle
-nœud
-nœuds
+nï¿½ud
+nï¿½uds
 noir
 noire
 noires
@@ -14932,14 +14932,14 @@ odeurs
 Odile
 odorant
 odorat
-œil
-œillere
-œsophage
-œuf
-œufs
-œuvre
-œuvrer
-œuvres
+ï¿½il
+ï¿½illere
+ï¿½sophage
+ï¿½uf
+ï¿½ufs
+ï¿½uvre
+ï¿½uvrer
+ï¿½uvres
 offensant
 offense
 offenser
@@ -15821,11 +15821,11 @@ percer
 percevoir
 perche
 percher
-perçoit
-perçoivent
-perçu
-perçue
-perçus
+perï¿½oit
+perï¿½oivent
+perï¿½u
+perï¿½ue
+perï¿½us
 percussions
 perd
 perdait
@@ -16174,7 +16174,7 @@ pique
 piquer
 piquet
 piquets
-piqure
+piqï¿½re
 Pirandello
 pirates
 pire
@@ -16357,7 +16357,7 @@ poignee
 poignee de main
 poignet
 poil
-poinçon
+poinï¿½on
 poindre
 poing
 point
@@ -16713,7 +16713,7 @@ precises
 precision
 precisions
 precoce
-preconçu
+preconï¿½u
 preconisait
 preconise
 preconise
@@ -17298,7 +17298,7 @@ prouver
 Prouvost
 provenance
 provenant
-provençal
+provenï¿½al
 Provence
 provenir
 proverbe
@@ -17677,9 +17677,9 @@ rampante
 rampe
 ramper
 rancard
-rancœur
-rancœurs
-rançon
+rancï¿½ur
+rancï¿½urs
+ranï¿½on
 rancunier
 randonnee
 rang
@@ -17932,8 +17932,8 @@ reclassement
 reclus
 reclusion
 reclusionnaire
-reçoit
-reçoivent
+reï¿½oit
+reï¿½oivent
 recolte
 recolter
 recoltes
@@ -18008,8 +18008,8 @@ recteurs
 rectification
 rectifier
 rectorat
-reçu
-reçue
+reï¿½u
+reï¿½ue
 recueil
 recueille
 recueilli
@@ -18017,7 +18017,7 @@ recueillies
 recueillir
 recueillis
 recueils
-reçues
+reï¿½ues
 recul
 reculade
 recule
@@ -18028,10 +18028,10 @@ recuperation
 recupere
 recupere
 recuperer
-reçus
+reï¿½us
 recuse
 recuser
-reçut
+reï¿½ut
 recyclage
 redacteur
 redacteur en chef
@@ -19983,8 +19983,8 @@ sociologues
 socio-politique
 socle
 sodium
-sœur
-sœurs
+sï¿½ur
+sï¿½urs
 Soffite
 Soffites
 Sofia
@@ -20168,12 +20168,12 @@ souhaits
 souiller
 souillon
 souillure
-soul
+soï¿½l
 soulage
 soulagement
 soulager
-soulard
-soulerie
+soï¿½lard
+soï¿½lerie
 souleve
 souleve
 soulevee
@@ -20195,13 +20195,13 @@ soumises
 soumission
 soupape
 soupapes
-soupçon
-soupçonne
-soupçonne
-soupçonner
-soupçonnes
-soupçonneux
-soupçons
+soupï¿½on
+soupï¿½onne
+soupï¿½onne
+soupï¿½onner
+soupï¿½onnes
+soupï¿½onneux
+soupï¿½ons
 soupe
 souper
 soupeser
@@ -20663,25 +20663,25 @@ suppurer
 suprematie
 supreme
 sur
-sur
+sï¿½r
 suranne
 surannes
 surcharge
 surchauffe
 surchauffer
 surclasser
-surcout
+surcoï¿½t
 surcroit
 surdite
-sure
-surement
+sï¿½re
+sï¿½rement
 surenchere
 surencheres
 surencherir
 surendettement
-sures
+sï¿½res
 surestimer
-surete
+sï¿½rete
 surevaluer
 surface
 surfaces
@@ -20713,7 +20713,7 @@ surprise
 surprise-partie
 surprises
 surrealiste
-surs
+sï¿½rs
 sursaut
 sursauter
 sursis
@@ -21210,7 +21210,7 @@ tiennent
 tiennes
 tiens
 tient
-tierçage
+tierï¿½age
 tiers
 tige
 tigre
@@ -22412,8 +22412,8 @@ vociferation
 vociferations
 vociferer
 vodka
-vœu
-vœux
+vï¿½u
+vï¿½ux
 Vogel
 vogue
 voguer
@@ -22510,7 +22510,7 @@ voulu
 voulue
 voulut
 vous
-voute
+voï¿½te
 voyage
 voyager
 voyages
